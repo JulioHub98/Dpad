@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="ligth dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>dpad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Lexend+Tera&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+    table{
+    border-spacing:0;
+    }
+    
+    img{
+    border:0px;
+    padding:0px;
+    }
+    a{
+    text-decoration:none;
+    outline:none;
+    border:none;
+    }
+    @media screen and (max-width: 429px){
+    td{
+    padding:0px !important;
+    width:100% !important;
+    }
+    div{
+    width:100% !important;
+    }
+    #logo{
+    width:100% !important;
+    background-image:url(https://i.ibb.co/YLFMGg5/logomobile.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    }
+        #logo img{
+        width:100% !important;
+        opacity:0 !important;
+        }
+
+    #welcometext{
+    padding:60px 36px 34px 36px !important;
+    }
+
+    #cover{
+    width:100% !important;
+    }
+        #cover img{
+        width:78% !important;
+        }
+
+    #covertext{
+    padding:10px 48px 60px 48px !important;
+    }
+    #splitscreenimage td{
+    padding:22px 0px 0px 0px !important;
+    }
+        #splitscreenimage img{
+        width:66% !important;
+        }
+
+    #splitmodebutton td > table td{
+    padding:33px 74px 10px 74px !important;
+    }
+        #splitscreentext td > table td{
+        padding:0px 74px 46px 74px !important;
+        }
+
+    #footer{
+    padding:60px 0px 0px 0px !important;
+    }
+        #footer table{
+        padding:10px 0px 30px 0px !important;
+        }
+
+    #footerlinks td{
+    padding-bottom:27px !important;
+    }
+    }
+    @media screen and (max-width:415px){
+    #covertext{
+    padding-left:46px !important;
+    padding-right:46px !important;
+    }
+    #splitmodebutton td > table td{
+    padding-left:70px !important;
+    padding-right:70px !important;
+    }
+    #splitscreentext td > table td{
+    padding-left:70px !important;
+    padding-right:70px !important;
+    }
+    
+    }
+    @media screen and (max-width:391px){
+    #covertext{
+    padding-left:44px !important;
+    padding-right:44px !important;
+    }
+    #splitmodebutton td > table td{
+    padding-left: 68px !important;
+    padding-right: 68px !important;
+    }
+    #splitscreentext td > table td{
+    padding-left:68px !important;
+    padding-right:68px !important;
+    }
+    }
+    @media screen and (max-width:385px){
+    #covertext{
+    padding-left:42px !important;
+    padding-right:42px !important;
+    }
+    #splitmodebutton td > table td{
+    padding-right: 66px !important;
+    padding-left: 66px !important;
+    }
+    #splitscreentext td > table td{
+    padding-left:66px !important;
+    padding-right:66px !important;
+    }
+    }
+    @media screen and (max-width:376px){
+    #splitmodebutton td > table td{
+    padding-right:64px !important;
+    padding-right:64px !important;
+    }
+    }
+    @media screen and (max-width:361px){
+    #covertext{
+    text-align:justify !important;
+    padding-left:40px !important;
+    padding-right:40px !important;
+    }
+    #splitmodebutton td > table td{
+    padding-right:60px !important;
+    padding-left:60px !important;
+    }
+    #splitscreentext td > table td{
+    padding-left:60px !important;
+    padding-right:60px !important;
+    }
+    }
+    @media screen and (max-width:345px){
+    #covertext{
+    padding-left:38px !important;
+    padding-right:38px !important;
+    }
+    #splitmodebutton td > table td{
+    padding-right:58px !important;
+    padding-left:58px !important;
+    }
+    #splitscreentext td > table td{
+    text-align:justify !important;
+    padding-left:58px !important;
+    padding-right:58px !important;
+    }
+    }
+    @media screen and (max-width:331px){
+    #covertext{
+    padding-left:36px !important;
+    padding-right:36px !important;
+    }
+    #splitmodebutton td > table td{
+    padding-right:56px !important;
+    padding-left:56px !important;
+    }
+    #splitscreentext td > table td{
+    text-align:justify !important;
+    padding-right:56px !important;
+    padding-left:56px !important;
+    }
+    }
+    @media screen and (max-width:337px){
+    #covertext{
+    padding-left:36px !important;
+    padding-right:36px !important;
+    }
+    #splitscreentext td > table td{
+    text-align:justify !important;
+    padding-left:58px !important;
+    padding-right:58px !important;
+    }
+    }
+
+    @media (prefers-color-scheme: dark ) {
+    body{
+    background-color:rgb(13, 13, 13) !important;
+    }
+    #mailbody{
+    background-color:rgb(37, 37, 37);
+    }
+    #logo{
+    color:rgb(255, 255, 255) !important;
+    background-color:rgb(119, 182, 114) !important;
+    }
+    h1{
+    color:rgb(255, 255, 255) !important;
+    }
+    #covertext{
+    color:rgb(255, 255, 255) !important;
+    }
+    #splitscreenbutton{
+    background-color:rgb(119, 182, 114) !important;
+    }
+    #splitscreentext{
+    color:rgb(255, 255, 255) !important;
+    }
+    #footer table{
+    border-top:solid 10px rgb(119, 182, 114) !important;
+    }
+    #footer #footerlogo{
+    opacity:0 !important;
+    }
+
+    }
+    </style>
+    <!--[if (gte mso 9) │ (IE)]}>
+    <style>
+    #logo{
+    font-weight:bold;
+    }
+    #covertext{
+    font-size:16px !important;
+    }
+    #splitscreenimage{
+    display:none !important;
+    }
+    #splitscreenbutton{
+    display:none !important;
+    }
+      #splitmodebutton table{
+      display:none !important;
+      }
+    #splitscreentext{
+    display:none !important;
+    }
+        #splitscreentext table{
+        display:none !important;
+        }
+    
+    <!{endif}-->
+
+    <!--[if (gte mso 9) │ (IE)]}>
+    </style>
+    <!{endif}-->
+</head>
+<body bgcolor = "rgb(215, 159, 76)" style = "background-color:rgb(215, 159, 76); Margin:auto;">
+<div>
+<p style="font-size:0; color:transparent; line-height:1px; display:none; opacity:0;">🕹️👾 Press Start 👾🕹️</p>
+</div>
+
+<center width = "100%" style="table-layout:fixed;">
+    <div width = "600" style="width:600px; background-color:white;">
+    <!--[if (gte mso 9) │ (IE)]}>
+    <table align = "center" style = "border-spacing:0; color:#000000; font-family: 'Roboto', sans-serif; background-color:rgb (215, 159, 760); pading:0; width:100%; max-width:600px;" role = "presentation">
+    <!{endif}-->
+    <table id = "mailbody" align="center" role="presentation" cellpadding = "0" cellspacing = "0" class="email" style="color:rgb(13, 13, 13); font-family:'Roboto', Arial; Margin:0px; padding:0px;
+    width:100%; max-width:600px; background-color:white;  
+box-shadow: 0px 4px 12px 6px rgba(0,0,0,0.2);">
+        <tr>
+            <td>
+            <table style="width:100%;" valign = "middle" cellpadding = "0" cellspacing = "0" role="presentation">
+            <tr>
+                <td id="logo" style="color:white; background-color:rgb(87, 215, 76); font-family:'Days One', Arial Narrow; text-align:center;
+                text-transform:uppercase; font-size:1.1rem; width:100%;">
+                <img src="https://i.ibb.co/tmt0XhF/logo.png" alt="Dpad" style="display:block;">
+                </td>
+            </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table width = "100%" style="width:100%;" cellpadding = "0" cellspacing = "0" role="presentation">
+                <tr>
+                <td id="welcometext" style="text-align:center; padding:60px 0px 0px 0px;">
+                <h1 style="Margin:0px; font-size:2.2rem; text-align:center; text-transform:uppercase; font-family:Arial; letter-spacing:9.6px; font-weight:bold;">Welcome</h1>
+                </td>
+                </tr>    
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table width = "100%" style="width:100%;" cellpadding = "0" cellspacing = "0" role="presentation">
+                <tr>
+                <td id="cover" style="text-align:center; padding:34px 0px 0px 0px">
+                <img src="https://i.ibb.co/y6dMCkF/ezgif-com-gif-maker.gif" alt="">
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table width = "100%" style="width:100%;" cellpadding = "0" cellspacing = "0" role="presentation">
+                <tr>
+                <td id="covertext" style="padding:6px 82px 60px 82px; font-size:0.875rem; text-align:center;">
+                    Welcome to DPAD! We're happy to see you chose us as your gaming streaming platform. Much luck in your journey, and don't stop playing!
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+
+        <!--[if (gte mso 9) │ (IE)]}>
+        <tr>
+            <td>
+            <table id = "splitscreenimageoutlook" width = "100%" style = "width:100%;" cellpadding = "0" cellspacing = "0" role = "presentation">
+                <tr>
+                <td style = "text-align:center;">
+                <img src = "https://i.ibb.co/jVvGjT4/splitscreenimageoutlook.png" atl="">
+            <table id = "splitmodebuttonoutlook" width = "100%" style = "width:100%;" cellpadding = "0" cellspacing = "0" role = "presentation">
+                <tr>
+                <td cellpadding = "0" cellspacing = "0">
+                <a href = "" style = "display:block;"><img src = "https://i.ibb.co/G3LmHxQ/buttonoutlook.png" alt = "" style = "display:block;">
+        <!{endif}-->
+
+        <!--[if (gte mso 9) │ (IE)]}>
+                </a>
+                </td>
+                </tr>
+            </table>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <!{endif}-->
+        <tr>
+            <td>
+            <table id="splitscreenimage" width = "100%" style="width:100%;" cellpadding = "0" cellspacing = "0" role="presentation">
+                <tr>
+                <td style="background-color:rgb(13, 13, 13); text-align:center; padding:28px 0px 20px 0px;">
+                <img src="https://i.ibb.co/D9xvXg8/splitscreenimage.png" alt="">
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table id="splitmodebutton" width = "100%" style="width:100%;" cellpadding = "0" cellspacing ="0" role="presentation">
+                <tr>
+                <td>
+                    <table width = "100%" style="width:100%;"  cellpadding = "0" cellspacing ="0" role="presentation">
+                    <tr>
+                    <td style="background-color:rgb(13, 13, 13); text-align:center; padding:0px 144px 0px 144px;">
+                    <a id="splitscreenbutton" href="" style="background-color:rgb(87, 215, 76); color:rgb(255, 255, 255); padding:18px 0px 18px 0px; display:block; font-size:1.125rem; border-radius:6px;">Split Screen Multiplayer</a>
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <!--[if (gte mso 9) │ (IE)]}>
+            <table id = "splitscreenoutlook" width = "100%" style = "width:100%;" cellpadding = "0" cellspacing = "0" role = "presentation">
+                <tr>
+                <td>
+                    <table width = "100%" style = "100%" style = "width:100%;" cellpadding = "0" cellspacing = "0" role = "presentation">
+                    <tr>
+                    <td>
+                        <table width = "100%" style = "width:100%;" cellpadding = "0" cellspacing = "0" role = "presentation">
+                        <tr>
+                        <td style = "text-align:center;">
+                        <img src = "https://i.ibb.co/Y0nPGvJ/splitscreentext.png" alt = "" style = "display:block;">
+            <!{endif}-->
+            
+            <!--[if (gte mso 9) │ (IE)]}>
+                        </td>
+                        </tr>
+                        </table>
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+            <!{endif}-->
+
+            <table id="splitscreentext" width = "100%" style="width:100%;" cellpadding = "0" cellspacing = "0" role="presentation">
+                <tr>
+                <td>
+                    <table width = "100%" style="width:100%;" cellpadding = "0" cellspacing = "0" role="presentation">
+                    <tr>
+                    <td style="font-size:0.875rem; background-color:rgb(13, 13, 13); color:rgb(255, 255, 255); text-align:center; padding:10px 140px 46px 140px;">
+                        Play multiplayer and let your audience see what's on the second player's screen.
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table id="footer" width = "100%" style="width:100%; padding:60px 0px 30px 0px;" cellpadding = "0" cellspacing = "0" role="presentation">
+                <tr>
+                <td>
+                    <table width = "100%" style="width:100%; border-top:solid 10px rgb(87, 215, 76); padding:10px 0px 0px 0px;" cellpadding = "0" cellspacing = "0" role="presentation">
+                    <tr>
+                    <td style="text-align:center; background-image:url(https://i.ibb.co/sHLCw0K/footerlogodarkmode.png); background-repeat:no-repeat; background-position:center -1px;">
+                    <img id = "footerlogo" src="https://i.ibb.co/pQ8Bmyx/footerlogo.png" alt="">
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="footerlinks" style="width:100%;" cellpadding = "0" cellspacing ="0" role="presentation">
+                <tr>
+                    <td>
+                    <table id="footerlinks" style="width:100%;" cellpadding = "0" cellspacing ="0" role="presentation">
+                      <tr>
+                        <td style="text-align:center; padding:0px 0px 30px 0px;"><a style="color:rgb(13, 13, 13); font-size:0.75rem;" href="">Terms of Use |</a> <a style="color:rgb(13, 13, 13); font-size:0.75rem;" href = "">Policy & Privacy |</a> <a style="color:rgb(13, 13, 13); font-size:0.75rem;" href="">Contact Us</a></td>
+                      </tr>
+                    </table>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--[if gte mso 9) │ (IE)]}>
+    </table>
+    <!{endif}-->
+    </div>
+</center>
+</body>
+</html>
